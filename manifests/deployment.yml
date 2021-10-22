@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vivsridhpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vivsridhpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: vivsridhpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: vivsridhpipelinesjavascriptdocker 
+          image: vickbytes.azurecr.io/vivsridhpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
