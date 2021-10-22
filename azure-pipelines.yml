@@ -19,7 +19,11 @@ variables:
   imagePullSecret: 'vickbytes05a3-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  #vmImageName: 'ubuntu-latest'
+  pool:
+  name: vicky
+  demands:
+   - agent.name -equals Viveks-MacBook-Pro
 
   # Name of the new namespace being created to deploy the PR changes.
   k8sNamespaceForPR: 'review-app-$(System.PullRequest.PullRequestId)'
