@@ -21,7 +21,7 @@ variables:
   # Agent VM image name
   #vmImageName: 'ubuntu-latest'
   pool:
-    name: vicky
+    name: vicky2
     demands:
     - agent.name -equals Viveks-MacBook-Pro
 
